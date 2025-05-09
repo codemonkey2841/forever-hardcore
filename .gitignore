@@ -1,0 +1,47 @@
+# Compiled class files
+*.class
+
+# Gradle build output
+/build/
+/.gradle/
+
+# VS Code settings
+.vscode/
+
+# IntelliJ IDEA settings
+.idea/
+*.iml
+out/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Minecraft runtime and cache
+run/
+
+# Fabric remapped mods and loom cache
+loom-cache/
+remapped_mods/
+
+# Bin and generated sources
+bin/
+build/
+
+# Environment and secrets
+.env
+
+# Misc
+*.swp
+*.swo
+
+# Ignore user-specific files
+*.user
+*.sublime-workspace
+*.sublime-project
+
+# Ignore Minecraft instance folders (if present)
+.minecraft/
