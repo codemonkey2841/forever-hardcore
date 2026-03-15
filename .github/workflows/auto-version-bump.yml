@@ -22,7 +22,7 @@ jobs:
 
       - name: Bump version and create tag
         id: bump
-        uses: anothrNick/github-tag-action@v1.67.0
+        uses: anothrNick/github-tag-action@v1.75.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
