@@ -43,7 +43,7 @@ public class RandomRespawnMixin {
         for (int tries = 0; tries < 32; tries++) {
             double x = minX + (maxX - minX) * random.nextDouble();
             double z = minZ + (maxZ - minZ) * random.nextDouble();
-            
+
             Chunk chunk = world.getChunkManager().getChunk((int)x >> 4, (int)z >> 4, ChunkStatus.FULL, true);
             int y = world.getTopY(Heightmap.Type.WORLD_SURFACE, (int)x, (int)z);
             BlockPos candidate = new BlockPos((int)x, y, (int)z);
@@ -58,7 +58,7 @@ public class RandomRespawnMixin {
                 break;
             }
         }
-        
+
         if (spawnPos == null) {
             spawnPos = world.getSpawnPos();
             LOGGER.warn("[ForeverHardcore] No valid random spawn found, using world spawn: {}", spawnPos);
@@ -71,8 +71,8 @@ public class RandomRespawnMixin {
             true
         );
 
-        player.setSpawnPoint(respawnData, false);     
-        
+        player.setSpawnPoint(respawnData, false);
+
         LOGGER.info("[ForeverHardcore] Player spawn set to: {}", spawnPos);
     }
-} 
+}
